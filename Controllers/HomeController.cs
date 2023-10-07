@@ -18,11 +18,6 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
     [HttpPost]
     public IActionResult PlaceOrder(OrderEntity ordr)
     {
