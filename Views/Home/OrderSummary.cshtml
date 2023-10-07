@@ -1,0 +1,69 @@
+@model OrderEntity
+@{
+    ViewData["Title"] = "Order Summary";
+}
+<h1>@ViewData["Title"]</h1>
+
+<table>
+    <tr>
+        <td>Email:</td>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <td>First Name:</td>
+        <td>@Model.FirstName</td>
+    </tr>
+    <tr>
+        <td>Last Name:</td>
+        <td>@Model.LastName</td>
+    </tr>
+    <tr>
+        <td>Street:</td>
+        <td>@Model.Street</td>
+    </tr>
+        <tr>
+        <td>City:</td>
+        <td>@Model.City</td>
+    </tr>
+    <tr>
+        <td>Province:</td>
+        <td>@Model.Province</td>
+    </tr>
+    <tr>
+        <td>Postal Code:</td>
+        <td>@Model.PostalCode</td>
+    </tr>
+        <tr>
+        <td>Phone:</td>
+        <td>@Model.Phone</td>
+    </tr>
+    <tr>
+        <td>Order Type:</td>
+        <td>@Model.OrderType</td>
+    </tr>
+    <tr>
+        <td>Number Of Tickets:</td>
+        <td>@Model.NumberOfTickets</td>
+    </tr>
+    <tr>
+        <td>Payment Method:</td>
+        <td>@Model.PaymentType</td>
+    </tr>
+    <tr>
+        <td>Card Type:</td>
+        <td>@Model.CardType</td>
+    </tr>
+    <tr>
+        <td>Card Number:</td>
+        <td>@Model.CardNumber</td>
+    </tr>
+    <tr>
+        <td>Expiry Month:</td>
+        <td>@Model.ExpiryMonth</td>
+    </tr>
+    <tr>
+        <td>Expiry Year:</td>
+        <td>@Model.ExpiryYear</td>
+    </tr>
+
+</table>
