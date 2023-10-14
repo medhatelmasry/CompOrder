@@ -29,7 +29,7 @@ public class HomeController : Controller
         return View("Index");
     }
 
-        public IActionResult Contact(Contact contact)
+    public IActionResult Contact(Contact contact)
     {
         if (ModelState.IsValid)
         {
@@ -39,6 +39,14 @@ public class HomeController : Controller
         return View("Index");
     }
 
+    public IActionResult Zodiac(Zodiac zodiac)
+    {
+        if (ModelState.IsValid)
+        {
+            return View("Zodiac", zodiac); // pass the order object to the view
+        }
+        return View("Index");
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

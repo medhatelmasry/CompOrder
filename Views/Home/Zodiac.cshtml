@@ -1,0 +1,28 @@
+@model Zodiac
+@{
+    ViewData["Title"] = "Zodiac Summary";
+}
+<h1>@ViewData["Title"]</h1>
+
+<table>
+    <tr>
+        <td>Student Full Name:</td>
+        <td>@Model.StudentFullName</td>
+    </tr>
+    <tr>
+        <td>Student Set:</td>
+        <td>@Model.StudentSet</td>
+    </tr>
+    <tr>
+        <td>Contact Full Name:</td>
+        <td>@Model.ContactFullName</td>
+    </tr>
+    <tr>
+        <td>Contact Email:</td>
+        <td>@Model.ContactEmail</td>
+    </tr>
+    <tr>
+        <td>Comment:</td>
+        <td>@Model.Comment</td>
+    </tr>
+</table>
