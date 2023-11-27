@@ -34,7 +34,7 @@ public class HomeController : Controller
         if (ModelState.IsValid)
         {
             //Console.WriteLine($"------------ {ordr.Email}");
-            return View("Contact", contact); // pass the order object to the view
+            return View("Contact", contact); // pass the contact object to the view
         }
         return View("Index");
     }
@@ -43,7 +43,15 @@ public class HomeController : Controller
     {
         if (ModelState.IsValid)
         {
-            return View("Zodiac", zodiac); // pass the order object to the view
+            return View("Zodiac", zodiac); // pass the zodiac object to the view
+        }
+        return View("Index");
+    }
+    public IActionResult Address(Address address)
+    {
+        if (ModelState.IsValid)
+        {
+            return View("Address", address); // pass the address object to the view
         }
         return View("Index");
     }
