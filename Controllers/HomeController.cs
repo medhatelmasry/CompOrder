@@ -29,6 +29,7 @@ public class HomeController : Controller
         return View("Index");
     }
 
+    [HttpPost]
     public IActionResult Contact(Contact contact)
     {
         if (ModelState.IsValid)
@@ -39,6 +40,7 @@ public class HomeController : Controller
         return View("Index");
     }
 
+    [HttpPost]
     public IActionResult Zodiac(Zodiac zodiac)
     {
         if (ModelState.IsValid)
@@ -47,6 +49,8 @@ public class HomeController : Controller
         }
         return View("Index");
     }
+
+    [HttpPost]
     public IActionResult Address(Address address)
     {
         if (ModelState.IsValid)
