@@ -59,6 +59,15 @@ public class HomeController : Controller
         }
         return View("Index");
     }
+    [HttpPost]
+    public IActionResult ContactSales(ContactSales contactSales)
+    {
+        if (ModelState.IsValid)
+        {
+            return View("ContactSales", contactSales); // pass the contact sales object to the view
+        }
+        return View("Index");
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
